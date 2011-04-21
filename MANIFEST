@@ -3,7 +3,7 @@ Changes
 lib/Net/Disqus.pm
 lib/Net/Disqus/Exception.pm
 lib/Net/Disqus/interfaces.json
-Makefile.PL
+lib/Net/Disqus/UserAgent.pm
 MANIFEST
 META.json
 META.yml
@@ -12,5 +12,6 @@ t/000-load.t
 t/001-exception.t
 t/002-instantiate.t
 t/003-instantiate-error.t
+t/004-interfaces.t
+t/005-online.t
 t/manifest.t
-SIGNATURE    Added here by Module::Build
