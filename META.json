@@ -39,7 +39,7 @@
    "provides" : {
       "Net::Disqus" : {
          "file" : "lib/Net/Disqus.pm",
-         "version" : "v0.1.3"
+         "version" : "1.12"
       },
       "Net::Disqus::Exception" : {
          "file" : "lib/Net/Disqus/Exception.pm",
@@ -47,7 +47,7 @@
       },
       "Net::Disqus::UserAgent" : {
          "file" : "lib/Net/Disqus/UserAgent.pm",
-         "version" : "v0.1.0"
+         "version" : 0
       }
    },
    "release_status" : "stable",
@@ -56,5 +56,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "v0.1.3"
+   "version" : "1.12"
 }
