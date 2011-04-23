@@ -17,13 +17,13 @@ name: Net-Disqus
 provides:
   Net::Disqus:
     file: lib/Net/Disqus.pm
-    version: 1.12
+    version: 1.14
   Net::Disqus::Exception:
     file: lib/Net/Disqus/Exception.pm
-    version: 0
+    version: 1.13
   Net::Disqus::UserAgent:
     file: lib/Net/Disqus/UserAgent.pm
-    version: 0
+    version: 1.13
 requires:
   Class::Accessor: 0
   JSON::PP: 0
@@ -33,4 +33,4 @@ requires:
   URI::Escape: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 1.12
+version: 1.14
