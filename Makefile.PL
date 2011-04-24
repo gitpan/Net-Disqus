@@ -13,13 +13,13 @@ my %WriteMakefileArgs = (
   'AUTHOR' => 'Ben van Staveren <madcat@cpan.org>',
   'BUILD_REQUIRES' => {
     'Data::Dumper' => '0',
-    'Module::Build' => '0.3601',
+    'Module::Build' => '0.38',
     'Test::Exception' => '0',
     'Test::More' => '0'
   },
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.31',
-    'Module::Build' => '0.3601'
+    'Module::Build' => '0.38'
   },
   'DISTNAME' => 'Net-Disqus',
   'EXE_FILES' => [],
@@ -28,9 +28,10 @@ my %WriteMakefileArgs = (
   'PREREQ_PM' => {
     'Class::Accessor' => '0',
     'Try::Tiny' => '0',
+    'constant' => '0',
     'overload' => '0'
   },
-  'VERSION' => '1.15',
+  'VERSION' => '1.16',
   'test' => {
     'TESTS' => 't/*.t'
   }

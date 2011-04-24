@@ -2,26 +2,26 @@
 use strict;
 use warnings;
 
-use Module::Build 0.3601;
+use Module::Build 0.38;
 
 
 my %module_build_args = (
   'build_requires' => {
     'Data::Dumper' => '0',
-    'Module::Build' => '0.3601',
+    'Module::Build' => '0.38',
     'Test::Exception' => '0',
     'Test::More' => '0'
   },
   'configure_requires' => {
     'ExtUtils::MakeMaker' => '6.31',
-    'Module::Build' => '0.3601'
+    'Module::Build' => '0.38'
   },
   'dist_abstract' => 'Disqus.com API access',
   'dist_author' => [
     'Ben van Staveren <madcat@cpan.org>'
   ],
   'dist_name' => 'Net-Disqus',
-  'dist_version' => '1.15',
+  'dist_version' => '1.16',
   'license' => 'perl',
   'module_name' => 'Net::Disqus',
   'recommends' => {},
@@ -29,6 +29,7 @@ my %module_build_args = (
   'requires' => {
     'Class::Accessor' => '0',
     'Try::Tiny' => '0',
+    'constant' => '0',
     'overload' => '0'
   },
   'script_files' => []

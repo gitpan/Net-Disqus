@@ -4,12 +4,12 @@ author:
   - 'Ben van Staveren <madcat@cpan.org>'
 build_requires:
   Data::Dumper: 0
-  Module::Build: 0.3601
+  Module::Build: 0.38
   Test::Exception: 0
   Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.31
-  Module::Build: 0.3601
+  Module::Build: 0.38
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110930'
 license: perl
@@ -20,9 +20,10 @@ name: Net-Disqus
 requires:
   Class::Accessor: 0
   Try::Tiny: 0
+  constant: 0
   overload: 0
 resources:
   bugtracker: https://github.com/benvanstaveren/Net-Disqus/issues
-  homepage: http://xirinet.com/projects/net-disqus/
+  homepage: http://search.cpan.org/dist/Net-Disqus/
   repository: git://github.com/benvanstaveren/Net-Disqus.git
-version: 1.15
+version: 1.16

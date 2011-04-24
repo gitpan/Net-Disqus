@@ -1,3 +1,16 @@
+use strict;
+use warnings;
+package Net::Disqus::Interfaces;
+BEGIN {
+  $Net::Disqus::Interfaces::VERSION = '1.16';
+}
+
+# this got turned into a module since bundling a json file is often
+# a pain in the you-know-whatsit - plus I forgot to add it to the Dist::Zilla
+# distribution last time, so as a module at least it get picked up all the time 
+# regardless. 
+
+use constant INTERFACES => q|
 {
   "reactions": {
     "list": {
@@ -609,3 +622,6 @@
     }
   }
 }
+|;
+
+1;

@@ -9,8 +9,8 @@ README
 dist.ini
 lib/Net/Disqus.pm
 lib/Net/Disqus/Exception.pm
+lib/Net/Disqus/Interfaces.pm
 lib/Net/Disqus/UserAgent.pm
-lib/Net/Disqus/interfaces.json
 t/000-load.t
 t/001-exception.t
 t/002-instantiate.t
@@ -18,3 +18,4 @@ t/003-instantiate-error.t
 t/004-interfaces.t
 t/005-online.t
 t/manifest.t
+t/release-cpan-changes.t

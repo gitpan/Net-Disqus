@@ -2,7 +2,7 @@ use warnings;
 use strict;
 package Net::Disqus;
 BEGIN {
-  $Net::Disqus::VERSION = '1.15';
+  $Net::Disqus::VERSION = '1.16';
 }
 use Try::Tiny;
 use Net::Disqus::UserAgent;
@@ -37,17 +37,10 @@ sub new {
 
     my $if_file = $INC{'Net/Disqus.pm'};
     $if_file =~ s/(.*)\.pm$/$1/;
-    $if_file .= '/interfaces.json';
+    $if_file .= '/Interfaces.pm';
 
-    my $interfaces;
-
-    open my $fh, '<', $if_file || die Net::Disqus::Exception->new({ code => 500, text => 'could not open interfaces.json'});
-    {
-        local $/;
-        $self->interfaces($self->ua->json_decode(<$fh>));
-    }
-    close($fh);
-
+    require "$if_file";
+    $self->interfaces($self->ua->json_decode(Net::Disqus::Interfaces->INTERFACES));
     return $self;
 }
 
@@ -150,7 +143,7 @@ Net::Disqus - Disqus.com API access
 
 =head1 VERSION
 
-version 1.15
+version 1.16
 
 =head1 SYNOPSIS
 
@@ -311,7 +304,7 @@ Ben van Staveren, C<< <madcat at cpan.org> >>
 
 =head1 BUGS AND/OR CONTRIBUTING
 
-Please report any bugs or feature requests through the web interface at L<https://github.com/ben-van-staveren/net-disqus/issues>. If you want to contribute code or patches, feel free to fork the Git repository located at L<https://github.com/benvanstaveren/net-disqus> and make pull requests for any patches you have.
+Please report any bugs or feature requests through the web interface at L<https://github.com/benvanstaveren/net-disqus/issues>. If you want to contribute code or patches, feel free to fork the Git repository located at L<https://github.com/benvanstaveren/net-disqus> and make pull requests for any patches you have.
 
 =head1 SUPPORT
 

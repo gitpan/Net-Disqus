@@ -16,19 +16,20 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Module::Build" : "0.3601"
+            "Module::Build" : "0.38"
          }
       },
       "configure" : {
          "requires" : {
             "ExtUtils::MakeMaker" : "6.31",
-            "Module::Build" : "0.3601"
+            "Module::Build" : "0.38"
          }
       },
       "runtime" : {
          "requires" : {
             "Class::Accessor" : 0,
             "Try::Tiny" : 0,
+            "constant" : 0,
             "overload" : 0
          }
       },
@@ -45,13 +46,13 @@
       "bugtracker" : {
          "web" : "https://github.com/benvanstaveren/Net-Disqus/issues"
       },
-      "homepage" : "http://xirinet.com/projects/net-disqus/",
+      "homepage" : "http://search.cpan.org/dist/Net-Disqus/",
       "repository" : {
          "type" : "git",
          "url" : "git://github.com/benvanstaveren/Net-Disqus.git",
          "web" : "https://github.com/benvanstaveren/Net-Disqus"
       }
    },
-   "version" : "1.15"
+   "version" : "1.16"
 }
 
