@@ -1,29 +1,40 @@
+
 use strict;
 use warnings;
-use Module::Build;
 
-my $builder = Module::Build->new(
-    module_name         => 'Net::Disqus',
-    license             => 'perl',
-    dist_author         => q{Ben van Staveren <madcat@cpan.org>},
-    dist_version_from   => 'lib/Net/Disqus.pm',
-    dist_abstract       => 'Disqus.com API access',
-    configure_requires  => {
-        'Module::Build'     => '0.38',
-    },
-    build_requires => {
-        'Test::Exception'   => 0,
-        'Test::More'        => 0,
-    },
-    requires => {
-        'Class::Accessor'   => 0,
-        'JSON::PP'          => 0,
-        'LWP::UserAgent'    => '6.02',
-        'Try::Tiny'         => 0,
-        'URI'               => 0,
-        'URI::Escape'       => 0,
-    },
-    add_to_cleanup      => [ 'Net-Disqus-*' ],
+use Module::Build 0.3601;
+
+
+my %module_build_args = (
+  'build_requires' => {
+    'Data::Dumper' => '0',
+    'Module::Build' => '0.3601',
+    'Test::Exception' => '0',
+    'Test::More' => '0'
+  },
+  'configure_requires' => {
+    'ExtUtils::MakeMaker' => '6.31',
+    'Module::Build' => '0.3601'
+  },
+  'dist_abstract' => 'Disqus.com API access',
+  'dist_author' => [
+    'Ben van Staveren <madcat@cpan.org>'
+  ],
+  'dist_name' => 'Net-Disqus',
+  'dist_version' => '1.15',
+  'license' => 'perl',
+  'module_name' => 'Net::Disqus',
+  'recommends' => {},
+  'recursive_test_files' => 1,
+  'requires' => {
+    'Class::Accessor' => '0',
+    'Try::Tiny' => '0',
+    'overload' => '0'
+  },
+  'script_files' => []
 );
-$builder->add_build_element('json');
-$builder->create_build_script();
+
+
+my $build = Module::Build->new(%module_build_args);
+
+$build->create_build_script;

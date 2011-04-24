@@ -1,10 +1,11 @@
-package Net::Disqus::UserAgent;
 use strict;
 use warnings;
+package Net::Disqus::UserAgent;
+BEGIN {
+  $Net::Disqus::UserAgent::VERSION = '1.15';
+}
 use Net::Disqus::Exception;
 use Try::Tiny;
-
-our $VERSION = '1.13';
 
 sub new {
     my $pkg = shift;
@@ -128,7 +129,7 @@ Net::Disqus::UserAgent - Wrapper around LWP::UserAgent or Mojo::UserAgent
 
 =head1 VERSION
 
-Version 0.1.0
+version 1.15
 
 =head1 SYNOPSIS
     

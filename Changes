@@ -1,16 +1,5 @@
-changeset:   15:96afa046ab8d
-tag:         tip
-user:        madcat@cpan.org
-date:        Sun Apr 24 02:57:19 2011 +0700
-summary:     Added tag 1.14 for changeset c6033d91e333
-
-changeset:   14:c6033d91e333
-tag:         1.14
-user:        madcat@cpan.org
-date:        Sun Apr 24 02:56:51 2011 +0700
-summary:     Added versions back to N::D::Exception and N::D::UserAgent because the PAUSE indexer bitches about it
-
 changeset:   13:18d3c0460c22
+tag:         tip
 user:        madcat@cpan.org
 date:        Sun Apr 24 02:35:19 2011 +0700
 summary:     Added tag 1.12 for changeset 7bb44dffde9b

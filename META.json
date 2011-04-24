@@ -3,8 +3,8 @@
    "author" : [
       "Ben van Staveren <madcat@cpan.org>"
    ],
-   "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.110930",
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110930",
    "license" : [
       "perl_5"
    ],
@@ -16,45 +16,42 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Test::Exception" : 0,
-            "Test::More" : 0
+            "Module::Build" : "0.3601"
          }
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.38"
+            "ExtUtils::MakeMaker" : "6.31",
+            "Module::Build" : "0.3601"
          }
       },
       "runtime" : {
          "requires" : {
             "Class::Accessor" : 0,
-            "JSON::PP" : 0,
-            "LWP::UserAgent" : "6.02",
             "Try::Tiny" : 0,
-            "URI" : 0,
-            "URI::Escape" : 0
+            "overload" : 0
          }
-      }
-   },
-   "provides" : {
-      "Net::Disqus" : {
-         "file" : "lib/Net/Disqus.pm",
-         "version" : "1.14"
       },
-      "Net::Disqus::Exception" : {
-         "file" : "lib/Net/Disqus/Exception.pm",
-         "version" : "1.13"
-      },
-      "Net::Disqus::UserAgent" : {
-         "file" : "lib/Net/Disqus/UserAgent.pm",
-         "version" : "1.13"
+      "test" : {
+         "requires" : {
+            "Data::Dumper" : 0,
+            "Test::Exception" : 0,
+            "Test::More" : 0
+         }
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "license" : [
-         "http://dev.perl.org/licenses/"
-      ]
+      "bugtracker" : {
+         "web" : "https://github.com/benvanstaveren/Net-Disqus/issues"
+      },
+      "homepage" : "http://xirinet.com/projects/net-disqus/",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/benvanstaveren/Net-Disqus.git",
+         "web" : "https://github.com/benvanstaveren/Net-Disqus"
+      }
    },
-   "version" : "1.14"
+   "version" : "1.15"
 }
+
