@@ -20,10 +20,9 @@ name: Net-Disqus
 requires:
   Class::Accessor: 0
   Try::Tiny: 0
-  constant: 0
   overload: 0
 resources:
   bugtracker: https://github.com/benvanstaveren/Net-Disqus/issues
   homepage: http://search.cpan.org/dist/Net-Disqus/
   repository: git://github.com/benvanstaveren/Net-Disqus.git
-version: 1.16
+version: 1.17

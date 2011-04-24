@@ -21,7 +21,7 @@ my %module_build_args = (
     'Ben van Staveren <madcat@cpan.org>'
   ],
   'dist_name' => 'Net-Disqus',
-  'dist_version' => '1.16',
+  'dist_version' => '1.17',
   'license' => 'perl',
   'module_name' => 'Net::Disqus',
   'recommends' => {},
@@ -29,7 +29,6 @@ my %module_build_args = (
   'requires' => {
     'Class::Accessor' => '0',
     'Try::Tiny' => '0',
-    'constant' => '0',
     'overload' => '0'
   },
   'script_files' => []

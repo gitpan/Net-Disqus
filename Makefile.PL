@@ -28,10 +28,9 @@ my %WriteMakefileArgs = (
   'PREREQ_PM' => {
     'Class::Accessor' => '0',
     'Try::Tiny' => '0',
-    'constant' => '0',
     'overload' => '0'
   },
-  'VERSION' => '1.16',
+  'VERSION' => '1.17',
   'test' => {
     'TESTS' => 't/*.t'
   }

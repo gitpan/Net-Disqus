@@ -7,6 +7,9 @@ META.yml
 Makefile.PL
 README
 dist.ini
+extra/Interfaces.pm-template
+extra/build.pl
+extra/interfaces.json
 lib/Net/Disqus.pm
 lib/Net/Disqus/Exception.pm
 lib/Net/Disqus/Interfaces.pm

@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Net::Disqus::UserAgent;
 BEGIN {
-  $Net::Disqus::UserAgent::VERSION = '1.16';
+  $Net::Disqus::UserAgent::VERSION = '1.17';
 }
 use Net::Disqus::Exception;
 use Try::Tiny;
@@ -129,7 +129,7 @@ Net::Disqus::UserAgent - Wrapper around LWP::UserAgent or Mojo::UserAgent
 
 =head1 VERSION
 
-version 1.16
+version 1.17
 
 =head1 SYNOPSIS
     

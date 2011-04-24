@@ -2,10 +2,11 @@ use warnings;
 use strict;
 package Net::Disqus;
 BEGIN {
-  $Net::Disqus::VERSION = '1.16';
+  $Net::Disqus::VERSION = '1.17';
 }
 use Try::Tiny;
 use Net::Disqus::UserAgent;
+use Net::Disqus::Interfaces;
 use Net::Disqus::Exception;
 use base 'Class::Accessor';
 
@@ -33,14 +34,8 @@ sub new {
     $args{'ua'} = Net::Disqus::UserAgent->new(%{$args{'ua_args'}});
     $args{'api_url'} = 'https://secure.disqus.com/api/3.0' if($args{'secure'});
     my $self = $class->SUPER::new({%args});
-    bless($self, $class);
 
-    my $if_file = $INC{'Net/Disqus.pm'};
-    $if_file =~ s/(.*)\.pm$/$1/;
-    $if_file .= '/Interfaces.pm';
-
-    require "$if_file";
-    $self->interfaces($self->ua->json_decode(Net::Disqus::Interfaces->INTERFACES));
+    $self->interfaces(Net::Disqus::Interfaces->INTERFACES());
     return $self;
 }
 
@@ -124,7 +119,6 @@ sub AUTOLOAD {
     $self->path($self->path . '/' . $fragment);
     if($self->fragment->{$fragment}) {
         $self->fragment($self->fragment->{$fragment});
-
         return ($self->fragment->{method}) 
             ? $self->_mk_request(@_)
             : $self;
@@ -143,7 +137,7 @@ Net::Disqus - Disqus.com API access
 
 =head1 VERSION
 
-version 1.16
+version 1.17
 
 =head1 SYNOPSIS
 
