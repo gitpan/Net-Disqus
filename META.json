@@ -28,15 +28,12 @@
       "runtime" : {
          "requires" : {
             "Class::Accessor" : 0,
+            "JSON::PP" : 0,
+            "LWP::UserAgent" : 0,
             "Try::Tiny" : 0,
+            "URI" : 0,
+            "URI::Escape" : 0,
             "overload" : 0
-         }
-      },
-      "test" : {
-         "requires" : {
-            "Data::Dumper" : 0,
-            "Test::Exception" : 0,
-            "Test::More" : 0
          }
       }
    },
@@ -52,6 +49,6 @@
          "web" : "https://github.com/benvanstaveren/Net-Disqus"
       }
    },
-   "version" : "1.17"
+   "version" : "1.18"
 }
 

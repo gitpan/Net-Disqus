@@ -2,7 +2,7 @@ use warnings;
 use strict;
 package Net::Disqus;
 BEGIN {
-  $Net::Disqus::VERSION = '1.17';
+  $Net::Disqus::VERSION = '1.18';
 }
 use Try::Tiny;
 use Net::Disqus::UserAgent;
@@ -48,7 +48,7 @@ sub fetch {
     my @url = split(/\//, $url);
     my $last = pop(@url);
 
-    $t = $t->$_ for(@url);
+    $t = $t->$_() for(@url);
     return $t->$last(@_);
 }
 
@@ -137,7 +137,7 @@ Net::Disqus - Disqus.com API access
 
 =head1 VERSION
 
-version 1.17
+version 1.18
 
 =head1 SYNOPSIS
 

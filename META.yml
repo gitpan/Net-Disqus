@@ -3,10 +3,7 @@ abstract: 'Disqus.com API access'
 author:
   - 'Ben van Staveren <madcat@cpan.org>'
 build_requires:
-  Data::Dumper: 0
   Module::Build: 0.38
-  Test::Exception: 0
-  Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.31
   Module::Build: 0.38
@@ -19,10 +16,14 @@ meta-spec:
 name: Net-Disqus
 requires:
   Class::Accessor: 0
+  JSON::PP: 0
+  LWP::UserAgent: 0
   Try::Tiny: 0
+  URI: 0
+  URI::Escape: 0
   overload: 0
 resources:
   bugtracker: https://github.com/benvanstaveren/Net-Disqus/issues
   homepage: http://search.cpan.org/dist/Net-Disqus/
   repository: git://github.com/benvanstaveren/Net-Disqus.git
-version: 1.17
+version: 1.18

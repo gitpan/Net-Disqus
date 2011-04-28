@@ -12,10 +12,7 @@ my %WriteMakefileArgs = (
   'ABSTRACT' => 'Disqus.com API access',
   'AUTHOR' => 'Ben van Staveren <madcat@cpan.org>',
   'BUILD_REQUIRES' => {
-    'Data::Dumper' => '0',
-    'Module::Build' => '0.38',
-    'Test::Exception' => '0',
-    'Test::More' => '0'
+    'Module::Build' => '0.38'
   },
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.31',
@@ -27,10 +24,14 @@ my %WriteMakefileArgs = (
   'NAME' => 'Net::Disqus',
   'PREREQ_PM' => {
     'Class::Accessor' => '0',
+    'JSON::PP' => '0',
+    'LWP::UserAgent' => '0',
     'Try::Tiny' => '0',
+    'URI' => '0',
+    'URI::Escape' => '0',
     'overload' => '0'
   },
-  'VERSION' => '1.17',
+  'VERSION' => '1.18',
   'test' => {
     'TESTS' => 't/*.t'
   }

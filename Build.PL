@@ -7,10 +7,7 @@ use Module::Build 0.38;
 
 my %module_build_args = (
   'build_requires' => {
-    'Data::Dumper' => '0',
-    'Module::Build' => '0.38',
-    'Test::Exception' => '0',
-    'Test::More' => '0'
+    'Module::Build' => '0.38'
   },
   'configure_requires' => {
     'ExtUtils::MakeMaker' => '6.31',
@@ -21,14 +18,18 @@ my %module_build_args = (
     'Ben van Staveren <madcat@cpan.org>'
   ],
   'dist_name' => 'Net-Disqus',
-  'dist_version' => '1.17',
+  'dist_version' => '1.18',
   'license' => 'perl',
   'module_name' => 'Net::Disqus',
   'recommends' => {},
   'recursive_test_files' => 1,
   'requires' => {
     'Class::Accessor' => '0',
+    'JSON::PP' => '0',
+    'LWP::UserAgent' => '0',
     'Try::Tiny' => '0',
+    'URI' => '0',
+    'URI::Escape' => '0',
     'overload' => '0'
   },
   'script_files' => []

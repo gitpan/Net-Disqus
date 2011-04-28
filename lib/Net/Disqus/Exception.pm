@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Net::Disqus::Exception;
 BEGIN {
-  $Net::Disqus::Exception::VERSION = '1.17';
+  $Net::Disqus::Exception::VERSION = '1.18';
 }
 use base 'Class::Accessor';
 use overload '""' => \&overload_text;
