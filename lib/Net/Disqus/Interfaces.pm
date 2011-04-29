@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Net::Disqus::Interfaces;
 BEGIN {
-  $Net::Disqus::Interfaces::VERSION = '1.18';
+  $Net::Disqus::Interfaces::VERSION = '1.19';
 }
 
 # this got turned into a module since bundling a json file is often

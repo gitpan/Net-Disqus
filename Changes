@@ -1,5 +1,8 @@
 Revision history for Net-Disqus
 
+1.19      2011-04-29 07:23:18 Asia/Jakarta
+    Fix for missing Test::Exception in prerequisites
+
 1.18      2011-04-28 11:48:07 Asia/Jakarta
     Fixed missing prerequisites 
 

@@ -12,7 +12,9 @@ my %WriteMakefileArgs = (
   'ABSTRACT' => 'Disqus.com API access',
   'AUTHOR' => 'Ben van Staveren <madcat@cpan.org>',
   'BUILD_REQUIRES' => {
-    'Module::Build' => '0.38'
+    'Module::Build' => '0.38',
+    'Test::Exception' => '0',
+    'Test::More' => '0'
   },
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.31',
@@ -31,7 +33,7 @@ my %WriteMakefileArgs = (
     'URI::Escape' => '0',
     'overload' => '0'
   },
-  'VERSION' => '1.18',
+  'VERSION' => '1.19',
   'test' => {
     'TESTS' => 't/*.t'
   }

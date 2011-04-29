@@ -2,7 +2,7 @@ NAME
     Net::Disqus - Disqus.com API access
 
 VERSION
-    version 1.18
+    version 1.19
 
 SYNOPSIS
         use Net::Disqus;

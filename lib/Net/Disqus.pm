@@ -2,7 +2,7 @@ use warnings;
 use strict;
 package Net::Disqus;
 BEGIN {
-  $Net::Disqus::VERSION = '1.18';
+  $Net::Disqus::VERSION = '1.19';
 }
 use Try::Tiny;
 use Net::Disqus::UserAgent;
@@ -137,7 +137,7 @@ Net::Disqus - Disqus.com API access
 
 =head1 VERSION
 
-version 1.18
+version 1.19
 
 =head1 SYNOPSIS
 
